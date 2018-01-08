@@ -28,3 +28,7 @@ end
 def full?(board)
   board.all? {|occupied| occupied != " "}
 end
+
+def draw?(board)
+  !(won?) && (full?)
+end
