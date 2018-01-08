@@ -30,5 +30,7 @@ def full?(board)
 end
 
 def draw?(board)
-  !(won?) && (full?)
+  if (board[win_combo[0]]) == "X" || (board[win_combo[0]]) == "O"
+    false
+  end
 end
