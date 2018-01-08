@@ -22,5 +22,9 @@ def won?(board)
       return win_combo
     end
   end
-  return false 
+  return false
+end
+
+def full?(board)
+  board.all? {|occupied| occupied != " "}
 end
