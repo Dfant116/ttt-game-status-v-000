@@ -20,11 +20,8 @@ def won?(board)
       return win_combo
     elsif check_win_combination?(board, "O", win_combo)
       return win_combo
-    else 
+    else
       return false
     end
   end
 end
-
-      
-  
