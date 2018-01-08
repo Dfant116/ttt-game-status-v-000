@@ -39,7 +39,7 @@ end
 
 
 def over?(board)
-  won? || full? || draw?
+  won?(board) || draw?(board) || full?(board)
 end
 
 def winner?(board)
